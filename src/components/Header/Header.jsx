@@ -20,7 +20,7 @@ const Header = (props) => {
     }
 
     useEffect(() => {
-        if (Object.keys(photos).length > 0) {
+        if (photos.length > 0) {
             dispatch(fetchingPhotos(photos));
             return (() => {
                 dispatch(removePhotos());
