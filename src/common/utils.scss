@@ -1,0 +1,6 @@
+
+@mixin iconLayer($num){
+    width: $num;
+    height: $num;
+    color: black;
+}

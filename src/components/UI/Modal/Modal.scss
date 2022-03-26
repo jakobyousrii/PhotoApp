@@ -1,0 +1,77 @@
+@import "../../../common/utils.scss";
+
+.modalShadow{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalSection{
+    position: fixed;
+    top: 10%;
+    left: 28%;
+    width: 45%;
+    height: 80vh;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.009);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.modalHeart {
+    @include iconLayer(5rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    opacity: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.image:hover ~ .modalHeart, .modalHeart:hover {
+    opacity: 1;
+    transition: all 350ms ease-in-out;
+}
+
+.modalHeart .h-6{
+    margin: 0;
+    padding: 0;
+}
+
+
+.modalSection .x-icon{
+    @include iconLayer(1.2rem);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modalSection .image{
+    padding: 3rem 2rem;
+    width: 100%;
+    min-height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 750px) {
+    .modalSection{
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        height: auto;
+    }   
+}

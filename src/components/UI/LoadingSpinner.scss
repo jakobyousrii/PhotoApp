@@ -1,0 +1,20 @@
+
+.loadingSpinner{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70px;
+    background-color: transparent;
+    border: 10px solid gainsboro;
+    border-color: transparent gainsboro transparent gainsboro;
+    margin: 0 auto;
+    animation: rotating 1s infinite;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

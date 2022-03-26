@@ -1,0 +1,108 @@
+
+.photos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 1rem;
+    margin: 3rem 1rem;
+    grid-row-gap: 1rem;
+}
+
+.photos-grid .photoDiv {
+     width: 100%;
+     height: 100%;
+     position: relative;
+ }
+
+
+.photos-grid .photoDiv4{
+    grid-column: 2 span;
+}
+
+.photos-grid .photoDiv5{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv7{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv10{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv13{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv14{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv17{
+    grid-row: 2 span;
+}
+
+.photos-grid .photoDiv19{
+    grid-column: 2 span;
+}
+
+
+.photos-grid div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.photoArticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+}
+
+
+@media (max-width: 750px){
+    
+.photos-grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    height: auto;
+}
+
+.photos-grid .photoDiv4{
+    grid-column: 1 span;
+}
+
+.photos-grid .photoDiv5{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv7{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv10{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv13{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv14{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv17{
+    grid-row: 1 span;
+}
+
+.photos-grid .photoDiv19{
+    grid-column: 1 span;
+}
+}
